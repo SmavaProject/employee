@@ -28,7 +28,6 @@ export class EmployeeService {
   }
 
   getEmployeesList(): Observable<any> {
-    debugger;
     return this.http.get(`${this.baseUrl}`);
   }
 }
