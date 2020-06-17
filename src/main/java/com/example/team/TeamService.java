@@ -1,4 +1,4 @@
-package team;
+package com.example.team;
 
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.web.multipart.MultipartFile;
@@ -9,4 +9,8 @@ public interface TeamService {
 
     public TeamResponse uploadTeams(MultipartFile file);
     public boolean validateHeaderAndSize(List<CSVRecord> records, List<String> header );
+
+    public TeamResponse uploadTeams();
+
+    void getTeamList();
 }

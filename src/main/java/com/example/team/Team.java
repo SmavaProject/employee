@@ -1,4 +1,4 @@
-package team;
+package com.example.team;
 
 import org.hibernate.annotations.GenericGenerator;
 

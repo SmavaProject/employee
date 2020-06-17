@@ -1,9 +1,10 @@
-package team;
+package com.example.team;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
+@IdClass(TeamMembersId.class)
 @Entity
 @Table(name="TEAM_MEMBERS")
 public class TeamMembers implements Serializable {
@@ -18,10 +19,12 @@ public class TeamMembers implements Serializable {
     public static final String COLUMN_TEAM_MEMBERS_MODIFIED_DATE= "MODIFIED_DATE";
     public static final String COLUMN_TEAM_MEMBERS_MODIFIED_BY= "MODIFIED_BY";
 
+    @Id
     @ManyToOne
     @JoinColumn(name=COLUMN_TEAM_MEMBERS_TEAM_ID, nullable = false)
     private String teamId;
 
+    @Id
     @Column(name=COLUMN_TEAM_MEMBERS_USER_ID, nullable = false)
     private String userId;
 

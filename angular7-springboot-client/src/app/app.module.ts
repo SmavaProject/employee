@@ -8,13 +8,15 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TeamUploadComponent } from './team/team-upload/team-upload.component';
+import { TeamListComponent } from './team/team-list/team-list.component';
 @NgModule({
   declarations: [
     AppComponent,
     CreateEmployeeComponent,
     EmployeeDetailsComponent,
     EmployeeListComponent,
-    TeamUploadComponent
+    TeamUploadComponent,
+    TeamListComponent
   ],
   imports: [
     BrowserModule,

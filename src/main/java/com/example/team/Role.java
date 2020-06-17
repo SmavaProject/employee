@@ -1,4 +1,4 @@
-package team;
+package com.example.team;
 
 public enum Role {
     TEAM_OWNER,

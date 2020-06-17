@@ -1,4 +1,4 @@
-package team;
+package com.example.team;
 
 public class TeamResponse {
     enum Status {SUCCESS, FAILED};
